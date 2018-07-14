@@ -96,7 +96,7 @@ public class LocaleTypeDescriptor extends AbstractTypeDescriptor<Locale> {
 			return null;
 		}
 		if ( String.class.isAssignableFrom( type ) ) {
-			return (X) value.toString();
+			return (X) toString(value);
 		}
 		throw unknownUnwrap( type );
 	}
